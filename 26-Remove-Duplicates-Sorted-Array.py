@@ -34,11 +34,11 @@
 # Explanation: Your function should return k = 5, with the first five elements of nums being 0, 1, 2, 3, and 4 respectively.
 
 def removeDuplicates(self, nums: List[int]) -> int:
-        k = 1
-        
-        for i in range(1, len(nums)):
-            if nums[i-1] != nums[i]:
-                nums[k] = nums[i] 
-                k += 1
+    k = 1
+    
+    for i in range(1, len(nums)):
+        if nums[i-1] != nums[i]:
+            nums[k] = nums[i] 
+            k += 1
 
-        return k
+    return k
