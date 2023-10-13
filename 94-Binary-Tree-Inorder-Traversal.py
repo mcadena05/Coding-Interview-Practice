@@ -16,6 +16,9 @@
 # Input: root = [1]
 # Output: [1]
 
+from typing import Optional
+
+
 def inorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
         current = root
         output = []
