@@ -1,23 +1,23 @@
-class Solution:
-    def lengthOfLongestSubstring(self, s: str) -> int:
-        count = 0
-        test_str = ''
+
+def lengthOfLongestSubstring(self, s: str) -> int:
+    count = 0
+    test_str = ''
               
-        for i, char in enumerate(s):
-            if char not in test_str:
-                test_str = test_str + char
+    for i, char in enumerate(s):
+        if char not in test_str:
+            test_str = test_str + char
                 
             # elif s[i-1] != char:
             #     test_str = s[i-1] + char
             
-            else:
-                test_str = test_str[test_str.index(char)+1:] + char   
+        else:
+            test_str = test_str[test_str.index(char)+1:] + char   
                 
-            if len(test_str) >= count:
-                count = len(test_str)
+        if len(test_str) >= count:
+            count = len(test_str)
      
-            print(test_str)
+        print(test_str)
 
-        return count
+    return count
 
         
