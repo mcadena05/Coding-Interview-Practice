@@ -11,3 +11,14 @@ class Solution:
                 return True
         
         return False
+    
+
+
+
+
+    nums_set = set(nums)
+         
+         if len(nums) > len(nums_set):
+            return True
+         else:
+            return False
